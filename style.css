@@ -1,0 +1,260 @@
+@media (prefers-color-scheme: dark){
+  body{
+    background-color:rgb(13 15 20);
+  }
+
+  h1{
+    color: white;
+  }
+
+  h2{
+    color: white;
+  }
+  #h{
+    color: white;
+  }
+
+  #jmu{
+    background: none;
+    color: white;
+  }
+
+  #pru{
+    background: none;
+    color: white; 
+  }
+
+  #huz{
+    background: none;
+    color: white;
+  }
+
+  #hzn{
+    background: none;
+    color: white;
+  }
+
+  #jp{
+    background: none;
+    color: white;
+  }
+
+  #jh{
+    background: none;
+    color: white;
+  }
+  #nu{
+    background: none;
+    color: white;
+  }
+
+  #naapt{
+    background: none;
+    color: white;
+  }
+
+  #heslo{
+    background: none;
+    color: white;
+  }
+  .mala{
+    background: none;
+    color: white;
+  }
+
+ .velka{
+  background: none;
+  color: white;
+ }
+
+ .Cisla{
+  background: none;
+  color: white;
+ }
+
+ .Specialni-Znaky{
+  background: none;
+  color: white;
+ }
+
+ #delka-hesla{
+  background: none;
+  color: white;
+ }
+
+ .dh{
+  background: none;
+  color: white;
+ }
+ #vygenerovane-heslo{
+  background: none;
+  color: white;
+ }
+
+ /*button*/
+ .registrovatse{
+  background-color: #161b22; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+ .přihlásit-se{
+  background-color: #161b22; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+ .Registrace{
+  background-color: #161b22; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+ .přidat-heslo{
+  background-color: #161b22; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+ .generátor-hesel{
+  background-color: #161b22; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+ .Generuj-heslo{
+  background-color: #161b22; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+  
+
+ .zpet{
+  background-color: #161b22; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+ .kvh{
+  background-color: #535d6cc0; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+}
+
+
+.přidat-heslo{
+  background-color: #535d6cc0;/* Button background color */
+  color:white; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+ .kvh{
+  background-color: #535d6cc0; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+ 
+ .zpet{
+  background-color: #535d6cc0; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+ .Generuj-heslo{
+  background-color: #535d6cc0; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+ .generátor-hesel{
+  background-color: #535d6cc0; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+ .přidat-heslo{
+  background-color: #535d6cc0; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+ .přihlásit-se{
+  background-color: #535d6cc0; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+ .Registrace{
+  background-color: #535d6cc0; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+ 
+ .přidat-heslo{
+  background-color: #535d6cc0; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+ .registrovatse{
+  background-color: #535d6cc0; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+ 
