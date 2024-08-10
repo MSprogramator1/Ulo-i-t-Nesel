@@ -127,6 +127,41 @@
   border-radius: 5px;
   cursor: pointer;
  }
+
+ .kvh{
+  background-color: #161b22; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+ .zpet{
+  background-color: #161b22; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+ .generátor-hesel{
+  background-color: #161b22; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+ .Generuj-heslo{
+  background-color: #161b22; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+ }
 }
 
  @media (prefers-color-scheme: light){
