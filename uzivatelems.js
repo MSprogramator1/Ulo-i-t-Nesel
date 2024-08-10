@@ -11,8 +11,8 @@ if (fs.existsSync(SOUBOR_msu)) {
 
 
 
-function zhesvaniHesla(){
-  let heslo = "";
+function zhesvaniHesla(heslo){
+  //let heslo = "";
   let kZahashovani = heslo + "$wcc3@2021=";
   return crypto.createHash("sha256").update(kZahashovani).digest('hex');
 }
@@ -72,10 +72,10 @@ exports.server = function (vstup,parametry,vistup) {
     for(let Um of msU){
       console.log(parametry);
       console.log(Um.jmeno,"-",parametry.jmenopr);
-      console.log(Um.heslo,"-",parametry.he,"-",zhesvaniHesla(parametry.he));
+      console.log(Um.heslo,"-",parametry.hesla,"-",zhesvaniHesla(parametry.hesla));
       if(Um.jmeno == parametry.jmeno){
         
-        if(Um.heslo == zhesvaniHesla(parametry.heslo)){
+        if(Um.heslo == zhesvaniHesla(parametry.hesla)){
 
           let token = crypto.randomBytes(11).toString("hex");
           Um.token = token;

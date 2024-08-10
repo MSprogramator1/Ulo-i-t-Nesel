@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uložište hesel</title>
     <script src="./script.js"></script>
-    
+    <link rel="stylesheet" href="./style.css">
     
     
 </head>
@@ -25,7 +25,7 @@
         <br>
         <input type="password" placeholder="heslo znovu" id="hzn">
         <br>
-        <button onclick="registovat()">registrovatse</button>
+        <button onclick="registovat()" class="registrovatse">registrovatse</button>
     </div>
 
     <div id="oblast_prihlaseni">
@@ -36,8 +36,8 @@
         <br>
         <input type="password" placeholder="heslo" id="jh">
         <br>
-        <button onclick="prihlasitSe()">přihlásit se</button>
-        <input type="button" onclick="ukazRegistraci()" value="Registrace...">
+        <button onclick="prihlasitSe()" class="přihlásit-se">přihlásit se</button>
+        <input type="button" onclick="ukazRegistraci()" value="Registrace..." class="Registrace">
         <br>
     </div>
 
@@ -52,43 +52,36 @@
 
         <br>
         <br>
-        <button onclick="uloztHesla()">přidat heslo</button>
+        <button onclick="uloztHesla()" class="přidat-heslo">přidat heslo</button>
         <br>
         <br>
-        <button onclick="ukazGeneratorHesel()">generátor hesel</button>
-        <br>
-        <br>
-        <button onclick="kopirovaatJMENO()">kopírovat jmeno</button>
-        <br>
-        <br>
-        <button onclick="kopirovatHESLO()">kopírovat heslo</button>
+        <button onclick="ukazGeneratorHesel()" class="generátor-hesel">generátor hesel</button>
     </div>
     <br>
 
     <div id="ghe">
         <h1>Generator hesel</h1>
         <div>
-            <div>
-                <label>Mala<input type="checkbox" checked id="checkbox-mala"></label>
+            <div class="mala">
+                <label>Mala<input type="checkbox" checked id="checkbox-mala"style="color: #000;"></label>
             </div>
-            <div>
+            <div class="velka">
                 <label>Velka<input type="checkbox" id="checkbox-velka"></label>
-            </div>
-            <div>
+            </div> 
+            <div class="Cisla">
                 <label>Cisla<input type="checkbox" checked id="checkbox-cisla"></label>
             </div>
-            <div>
+            <div class="Specialni-Znaky">
                 <label>Specialni Znaky<input type="checkbox" id="checkbox-specialni-znaky"></label>
             </div>
-            <div>
+            <div class="dh">
                 <label>Delka hesla<input type='number' min="1" value="8" id="delka-hesla"></label>
             </div>
             <div>
-                <button id="generator" onclick="generuj()">Generuj
-                    heslo</button>
+                <button id="generator" onclick="generuj()" class="Generuj-heslo">Generuj heslo</button>
                     <br>
                     <br>
-                    <button onclick="ukazKomunikaci()">zpět</button>
+                    <button onclick="ukazKomunikaci()" class="zpet">zpět</button>
             </div>
         </div>
         <br>
@@ -96,6 +89,9 @@
         <br>
         <br>
         <input type="text" id="vygenerovane-heslo">
+        <br>
+        <br>
+        <button  onclick=" kopirovatGH()" class="kvh">kopírovat vygenerovane heslo</button>
         <br>
         <br>
       

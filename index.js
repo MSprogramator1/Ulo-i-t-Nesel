@@ -17,7 +17,7 @@ let port = 7070;
 let html = fs.readFileSync("./index.html");
 let js = fs.readFileSync("./script.js");
 let Klic = fs.readFileSync("./Klic.jpg");
-
+let css = fs.readFileSync("./style.css");
 
 // funce na servu
 function server(vstup,vistup){
@@ -69,11 +69,16 @@ if(vstup.url.startsWith("/uzvatelems/registrovat")){
     vistup.end(html);
  }
   
+ if(vstup.url == "/style.css"){
+   vistup.writeHead(200,{"Content-type": "text/css"});
+   css.toString();
+   vistup.end(css);
+}
+
  if (vstup.url == "/script.js") {
     vistup.writeHead(200,{"Content-type": "application/javascript"});
     vistup.end(js);
 }
-
 
 if(vstup.url == "/favicon.ico"){
    vistup.writeHead(200,{"Content-type":"image/jpg"});

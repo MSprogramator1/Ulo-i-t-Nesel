@@ -70,9 +70,10 @@ async function prihlasitSe(){
  
    setInterval(nacti,2000);
     ukazKomunikaci();
+    
 }
 
-//token = data.token;
+//token = data.token;ç
 
 async function nacti(){
   // posilani na server ve formatu url
@@ -84,7 +85,7 @@ async function nacti(){
     let data = await re.json();
     console.log("nacti",data)
 
-    let s ="<table><th>Jméno uživatele</th><th>Název aplikace</th><th>Heslo do aplikace</th><th>kopirovat heslo</th><th>kopírovat<br>jmeno uživtele</th>";
+    let s ="<table><th>Jméno <br> uživatele</th><th>Název <br>aplikace</th><th>Heslo do aplikace</th><th>kopirovat <br> heslo</th><th>kopírovat<br>jmeno uživtele</th>";
     let ss ="";
     for(let ho of data.hesla){
       ss = "<tr><td>" + ho.jmeno+"</td><td>"+ ho.nazev+ "</td><td>"+ho.heslo+"</td><td><button onclick= 'upravytHESLO(`"+ho.id+ "`,`" + ho.heslo +"`)'>kopírovat heslo</button></td><td><button onclick=' upravytJMENO(`" + ho.id +"`,`" + ho.jmeno +"`)'>kopírovat jméno</button></td></tr>" + ss 
@@ -239,11 +240,13 @@ function ukazGeneratorHesel(){
 function upravytHESLO(id,heslo){
   document.getElementById("idhesla").value = id;
   document.getElementById("heslo").value = heslo;
+  kopirovatHESLO();
 }
 
 function upravytJMENO(id,jmeno){
   document.getElementById("idhesla").value = id;
   document.getElementById("nu").value = jmeno;
+  kopirovaatJMENO();
 }
 
 // kopirovani 
@@ -251,10 +254,23 @@ function kopirovaatJMENO(){
   let kopjmeno = document.getElementById("nu").value;
   navigator.clipboard.writeText(kopjmeno);
   alert("jmeno je přpraveno na vložení");
+ smazKopírování(kopjmeno);
 }
 
 function kopirovatHESLO(){
   let kopheslo = document.getElementById("heslo").value;
   navigator.clipboard.writeText(kopheslo);
   alert("heslo je přpraveno na vložení");
+  smazKopírování(kopheslo);
+}
+
+function kopirovatGH(){
+  let kopVH = document.getElementById("vygenerovane-heslo").value;
+  navigator.clipboard.writeText(kopVH);
+  alert("generované heslo je přpraveno na vložení");
+}
+
+function smazKopírování(kopheslo,kopjmeno){
+  kopjmeno = document.getElementById("nu").value = "";
+  kopheslo = document.getElementById("heslo").value = "";
 }
